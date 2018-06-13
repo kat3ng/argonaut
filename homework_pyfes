@@ -1,0 +1,21 @@
+#Assignment #2 asks: Take the input of a word and 1) add "'s" to the end of the word, 2) print the number of letters, 3) scramble the word, and 4) loop this so the function performs this action twice.
+#written for python >3
+
+# imports the random library?
+import random
+
+#asks the user for a word to run functions on
+word = raw_input( "Enter a word human!" )
+
+#takes the word and turns the letters into a list of data points that the function can scramble
+charlist = list(word)
+
+#this command shuffles the list of characters
+random.shuffle(charlist)
+
+#puts the letters back together!
+new_word = ''.join(charlist)
+
+print (word + "'s")
+print new_word
+print len(new_word)
