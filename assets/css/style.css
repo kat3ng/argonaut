@@ -1,14 +1,19 @@
-div {
-    border: 1px black solid;
+body {
+    font-family: 'Poppins', sans-serif;
 }
 
-* {
+div {
+    /* border: 1px black solid; */
+}
+
+/* * {
     box-sizing: border-box;
     /* margin: 0;
     border: 0; */
+
 }
 
-.container {
+*/ .container {
     margin: auto;
     padding: 5%;
     width: 100%;
@@ -34,6 +39,15 @@ div {
     background: rgba(29, 31, 29, 0.65);
 }
 
+.poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.poppins-w {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
 /* MARGIN STYLING */
 
 .margin {
@@ -57,7 +71,7 @@ div {
 .jumbotron {
     background: none;
     font-size: 70px;
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
     margin: 0;
 }
 
@@ -71,14 +85,12 @@ div {
     margin-top: 4%;
     margin-left: 20%;
     color: white;
-    font-family: 'Poppins', sans-serif;
     max-width: 900px;
     height: auto;
 }
 
 .card {
     border: none;
-    font-family: 'Poppins', sans-serif;
 }
 
 .card-body {
@@ -91,6 +103,7 @@ div {
 
 .card-text {
     font-size: 24px;
+    line-height: 5px;
     padding: 35px, 5px, 35px, 5px;
     margin-left: 5%;
 }
@@ -109,7 +122,6 @@ div {
 
 .button {
     display: initial;
-    font-family: "Poppins";
     font-size: 1rem;
     line-height: 3.5em;
     margin: 5rem 6rem 5rem;
