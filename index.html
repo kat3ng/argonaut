@@ -8,8 +8,11 @@
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+    <!-- SPECIAL FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Poor+Story|Poppins:300" rel="stylesheet">
+    <!-- STYLESHEET -->
     <link rel="stylesheet" href="assets/css/style.css">
+
     <title>Kat Eng | About Me</title>
 </head>
 
@@ -33,94 +36,108 @@
             </ul>
         </nav>
     </div>
-    <div class="row-md-12 space image_bar">
+    <div class="row-md-12 margin image_bar">
 
-        <div class="text-block ">
+        <div class="text-block opaque ">
 
-            <h1>HELLO! I’M KAT ENG</h1>
-            <p class="card-text">Come Explore
+            <h1 class="jumbotron">HELLO! I’M KAT ENG</h1>
+            <p class="card-text">Come Explore!</p>
+            <p class="inner-card-text ">
                 I’m so excited you’re here. Please take a moment to explore my site, where you’ll find details on my
+                experience, skills and more. To learn more or connect on an opportunity, don’t hesitate to reach out.
                 background,
-                experience, skills and more. To learn more or connect on an opportunity, don’t hesitate to reach out.</p>
+            </p>
+            <a href="#" class="btn" data-wipe="Wipe Hover Effect">Contact Me</a>
         </div>
     </div>
     <div class="container text-center">
         <!-- ABOUT ME SECTION/ WELCOME -->
-        <div class="row-md-12 space" id="aboutme-title">
+        <div class="row-md-12 margin" id="aboutme-title">
             <h1>About Me</h1>
         </div>
         <!-- USER PIC -->
-        <div class="row-md-12 space thumbnail" id="sweet-pic">
+        <div class="row-md-12 margin thumbnail" id="sweet-pic">
             <img src="assets/images/mypic.png" alt="my picture" style="height:300px; ;" class="thumbnail">
         </div>
 
         <!-- ABOUT ME CONTENT -->
-        <div class="row-md-12 space" id="aboutme-content"></div>
+        <div class="row-md-12 margin" id="aboutme-content">
+        </div>
         <!-- EDUCATION SECTION -->
-        <div class="row-md-12 space" id="education-title">
+        <div class="row-md-12 margin" id="education-title">
             <h1>Education Title</h1>
         </div>
         <!-- SCHOOL CONTENT -->
+
+        <div class="col d-flex justify-content-center">
+            <div class="card" style="width: 24rem;">
+                <div class="card-body">
+                    <h5 class="card-title">GRADUATE CERTIFICATE IN WEB DEVELOPMENT,
+                        NORTHWESTERN UNIVERSITY</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">August 2018 - expected graduation March 2019</h6>
+                    <p class="card-text">
+                        <p>Currently enrolled in the full stack web development coding bootcamp offered by
+                            Northwestern University.
+                            Thus far we
+                            have covered HTML, CSS, Bootstrap, Javascript, JSON, AJAX and Firebase. By the end of
+                            the course, I
+                            will have
+                            proficiency in Node.js, React.js, Database Theory, Bookshelf.js, MongoDB, Python and
+                            more.</p>
+
+                </div>
+            </div>
+        </div>
         <div class="row" id="school-input">
             <div class="col d-flex justify-content-center">
-                <div class="card" style="width: 18rem;">
+                <div class="card" style="width: 24rem;">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's
-                            content.</p>
-                        <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a>
+                        <h5 class="card-title">BA HISTORY, UNIVERSITY OF ILLINOIS AT CHAMPAIGN-URBANA</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">August 2005 - May 2009</h6>
+                        <p class="card-text">
+
+                            <p>This is a concise description of your educational experience. Use this space to provide
+                                background on the degree or
+                                qualification you received, including any important recognitions received along the
+                                way.</p>
+
                     </div>
                 </div>
             </div>
-            <div class="col d-flex justify-content-center">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's
-                            content.</p>
-                        <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a>
-                    </div>
-                </div>
-            </div>
+
         </div>
     </div>
+
     <!-- CALL ME BEEP ME IF YOU WANT TO REACH ME -->
-    <div class="row-md-12 space image_bar">
+    <div class="row-md-12 margin image_bar">
 
+        <div class="container margin text-center">
+            <div class="card-body contact-form opaque">
+                <h3 class="wht-fnt">Contact Me</h3>
+                <form>
+                    <div class="row justify-content-center">
+                        <div class="col">
+                            <div class="row-md-12">
+                                <input type="text" class="form-control" placeholder="Name">
+                            </div>
+                            <div class="row-md-12 email-input">
+                                <input type="text" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="row-md-12">
+                                <input type="text" class="form-control" placeholder="Subject">
+                            </div>
+                            <div class="row-md-12 input-lg">
+                                <textarea id="message" name="message" placeholder="Write something..." style="height:200px"></textarea>
+                            </div>
+                            <div class="row">
+                                <input type="submit" value="Submit">
+                            </div>
 
-        <div class="card-body contact-form">
-            <h3>Contact Me</h3>
-            <form>
-                <div class="row justify-content-center">
-                    <div class="col">
-                        <div class="row-md-12">
-                            <input type="text" class="form-control" placeholder="Name">
                         </div>
-                        <div class="row-md-12 email-input">
-                            <input type="text" class="form-control" placeholder="Email">
-                        </div>
-                        <div class="row-md-12">
-                            <input type="text" class="form-control" placeholder="Subject">
-                        </div>
-                        <div class="row-md-12 input-lg">
-                            <textarea id="message" name="message" placeholder="Write something..." style="height:200px"></textarea>
-                        </div>
-                        <div class="row">
-                            <input type="submit" value="Submit">
-                        </div>
-
                     </div>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
-
-
     </div>
 
 

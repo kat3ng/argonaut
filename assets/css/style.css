@@ -1,8 +1,7 @@
 div {
-    border: 1px black solid;
+    /* border: 1px black solid; */
 }
 
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans');
 .container {
     margin: auto;
     padding: 5%;
@@ -23,11 +22,15 @@ div {
     padding: 30px;
 }
 
+/* TRANSPARANT APPARENT BACKGROUNDS FOR TEXT OVER PHOTOS*/
+
 .opaque {
-    background: rgba(29, 31, 29, 0.7);
+    background: rgba(29, 31, 29, 0.65);
 }
 
-.space {
+/* MARGIN STYLING */
+
+.margin {
     margin: 30px;
 }
 
@@ -43,25 +46,111 @@ div {
     overflow: hidden;
 }
 
+/* ABOUT PAGE */
+
+.jumbotron {
+    background: none;
+    font-size: 70px;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+/* WELCOME TEXT STYLING */
+
+.wht-fnt {
+    color: white;
+}
+
 .text-block {
-    margin-top: 10%;
+    margin-top: 4%;
     margin-left: 20%;
-    color: whitesmoke;
-    font-family: 'Fira Sans', sans-serif;
+    color: white;
+    font-family: 'Poppins', sans-serif;
     max-width: 900px;
     height: auto;
 }
 
 .card-body {
-    margin: 5%;
-    max-width: 900px;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    line-height: 35px;
+    max-width: 980px;
     height: auto;
 }
 
 .card-text {
-    font-size: 26px;
+    font-size: 24px;
+    padding: 4%;
+}
+
+.inner-card-text {
+    font-size: 24px;
+    padding: 4%;
+    margin-bottom: 20px;
 }
 
 .contact-form {
     margin-left: 20%;
+}
+
+/* BUTTON BORROWED FROM CODEPEN.COM! */
+
+$duration: .20;
+$easing: ease-in-out;
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 50px;
+    text-align: center;
+    /* background: #F1F1F2; */
+}
+
+[data-wipe] {
+    display: inline-block;
+    padding: 12px 18px;
+    text-decoration: none;
+    position: relative;
+    border: 2px solid #445561;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-align: left;
+    color: #445561;
+    overflow: hidden;
+    &:before, &:after {
+        content: attr(data-wipe);
+        padding-top: inherit;
+        padding-bottom: inherit;
+        white-space: nowrap;
+        position: absolute;
+        top: 0;
+        overflow: hidden;
+        color: #F1F1F2;
+        background: #445561;
+    }
+    &:before {
+        left: 0;
+        text-indent: 18px;
+        width: 0;
+    }
+    &:after {
+        padding-left: inherit;
+        padding-right: inherit;
+        left: 100%;
+        text-indent: calc(-100% - 36px);
+        transition: $duration + s $easing;
+    }
+    &:hover {
+        &:before {
+            width: 100%;
+            transition: width $duration + s $easing;
+        }
+        &:after {
+            left: 0;
+            text-indent: 0;
+            transition: 0s $duration + s $easing;
+        }
+    }
 }
