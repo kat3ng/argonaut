@@ -1,5 +1,11 @@
 div {
-    /* border: 1px black solid; */
+    border: 1px black solid;
+}
+
+* {
+    box-sizing: border-box;
+    /* margin: 0;
+    border: 0; */
 }
 
 .container {
@@ -70,6 +76,11 @@ div {
     height: auto;
 }
 
+.card {
+    border: none;
+    font-family: 'Poppins', sans-serif;
+}
+
 .card-body {
     margin-top: 2%;
     margin-bottom: 5%;
@@ -80,11 +91,12 @@ div {
 
 .card-text {
     font-size: 24px;
-    padding: 4%;
+    padding: 35px, 5px, 35px, 5px;
+    margin-left: 5%;
 }
 
 .inner-card-text {
-    font-size: 24px;
+    font-size: 18pxpx;
     padding: 4%;
     margin-bottom: 20px;
 }
@@ -95,62 +107,29 @@ div {
 
 /* BUTTON BORROWED FROM CODEPEN.COM! */
 
-$duration: .20;
-$easing: ease-in-out;
-* {
-    box-sizing: border-box;
+.button {
+    display: initial;
+    font-family: "Poppins";
+    font-size: 1rem;
+    line-height: 3.5em;
+    margin: 5rem 6rem 5rem;
+    padding: 1em 2.5em;
+    background: gold;
+    box-shadow: inset 0 -.125rem rgba(0, 0, 0, .2);
+    color: black;
+    border-radius: 5em;
+    cursor: pointer;
+    user-select: none;
+    transform-origin: 100% 100%;
+    &:focus {
+        outline: 0;
+    }
 }
 
-body {
-    padding-top: 50px;
-    text-align: center;
-    /* background: #F1F1F2; */
-}
-
-[data-wipe] {
-    display: inline-block;
-    padding: 12px 18px;
-    text-decoration: none;
-    position: relative;
-    border: 2px solid #445561;
-    border-radius: 3px;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    text-align: left;
-    color: #445561;
-    overflow: hidden;
-    &:before, &:after {
-        content: attr(data-wipe);
-        padding-top: inherit;
-        padding-bottom: inherit;
-        white-space: nowrap;
-        position: absolute;
-        top: 0;
-        overflow: hidden;
-        color: #F1F1F2;
-        background: #445561;
-    }
-    &:before {
-        left: 0;
-        text-indent: 18px;
-        width: 0;
-    }
-    &:after {
-        padding-left: inherit;
-        padding-right: inherit;
-        left: 100%;
-        text-indent: calc(-100% - 36px);
-        transition: $duration + s $easing;
-    }
-    &:hover {
-        &:before {
-            width: 100%;
-            transition: width $duration + s $easing;
-        }
-        &:after {
-            left: 0;
-            text-indent: 0;
-            transition: 0s $duration + s $easing;
-        }
-    }
+.shadow {
+    margin-top: -.325rem;
+    width: 100%;
+    height: .75rem;
+    /* background: radial-gradient(closest-side, gainsboro, transparent); */
+    /* opacity: 0; */
 }
