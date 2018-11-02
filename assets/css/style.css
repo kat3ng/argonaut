@@ -20,6 +20,8 @@ div {
     height: auto;
 }
 
+/* CODE TO MAKE THE PHOTOS ROUND */
+
 .thumbnail {
     border-radius: 50%;
 }
@@ -116,6 +118,26 @@ div {
 
 .contact-form {
     margin-left: 20%;
+}
+
+.input-container {
+    margin: 10%;
+    border-radius: 5px;
+    /* border: 3px solid darkgray; */
+    /* background-color: #f2f2f2; */
+    padding: 20px;
+    max-width: 800px;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
 }
 
 /* BUTTON BORROWED FROM CODEPEN.COM! */
