@@ -9,9 +9,7 @@ div {
 /* * {
     box-sizing: border-box;
     /* margin: 0;
-    border: 0; */
-
-}
+    border: 0;} */
 
 */ .container {
     margin: auto;
@@ -31,15 +29,13 @@ div {
     padding: 50px;
 }
 
-#projects {
-    padding: 30px;
-}
-
 /* TRANSPARANT APPARENT BACKGROUNDS FOR TEXT OVER PHOTOS*/
 
 .opaque {
     background: rgba(29, 31, 29, 0.65);
 }
+
+/* FONTS */
 
 .poppins {
     font-family: 'Poppins', sans-serif;
@@ -66,6 +62,12 @@ div {
     height: 700px;
     display: inline-block;
     overflow: hidden;
+}
+
+/* NAV STYLING */
+
+.nav-link {
+    font-size: 15px;
 }
 
 /* ABOUT PAGE */
