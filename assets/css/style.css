@@ -53,7 +53,7 @@ div {
 }
 
 .image_bar {
-    background-image: url('/assets/images/seattlefloor.png');
+    background-image: url("/assets/images/seattlefloor.png");
     background-size: cover;
     -ms-background-position-x: center;
     -ms-background-position-y: bottom;
