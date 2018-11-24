@@ -40,7 +40,7 @@ div {
 /* NAV STYLING */
 
 .nav-link {
-    font-size: 15px;
+    font-size: 16px;
     color: goldenrod;
     margin: 4%;
 }
@@ -49,9 +49,13 @@ div {
     margin: 4%;
 }
 
+#tagline {
+    font-size: 20px;
+}
+
 /* ABOUT PAGE */
 
-#about-me, h4 {
+#about-me, h4, h1, h5 {
     margin-top: 5%;
     margin-bottom: 5%;
 }
@@ -69,7 +73,7 @@ div {
     border: none;
     border-radius: 50px;
     padding: 1rem 3rem;
-    margin: 10%;
+    margin-left: 10%;
     /* width: 100px; */
 }
 
@@ -99,9 +103,10 @@ footer {
 }
 
 .inner-card-text {
-    font-size: 18px;
-    margin: 6% 9%;
+    font-size: 16px;
+    margin: 5% 8%;
     width: 65%;
+    overflow: scroll;
 }
 
 .image_bar {
@@ -112,15 +117,15 @@ footer {
     background-position: center bottom;
     margin-top: 4%;
     width: 100%;
-    height: 750px;
+    height: 800px;
     display: inline-block;
     /* overflow: hidden; */
 }
 
 .jumbotron {
     background: none;
-    font-size: 75px;
-    margin: 2% 5%;
+    font-size: 70px;
+    margin: 1% 5%;
     /* font-family: 'Poppins', sans-serif; */
 }
 
@@ -140,7 +145,7 @@ footer {
     height: 90%;
     color: white;
     border-radius: 15px;
-    overflow: scroll;
+    /* overflow: scroll; */
 }
 
 /* CONNECT SECTION STYLING */
@@ -151,7 +156,6 @@ footer {
 }
 
 .contact-form {
-    /* margin-left: 17%; */
     align-content: center;
 }
 
@@ -159,14 +163,12 @@ footer {
     margin-left: 10%;
     border-radius: 5px;
     background-color: #f2f2f2;
-    /* padding: 20px; */
     max-width: 980px;
 }
 
 input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
-    /* border: 1px solid #ccc; */
     border-radius: 4px;
     box-sizing: border-box;
     margin-top: 6px;
@@ -183,7 +185,6 @@ input[type=text], select, textarea {
     border-radius: 20px;
     padding: 1rem 3rem;
     margin: 2.5%;
-    /* width: 100px; */
 }
 
 /* EXPERIENCE PAGE */
@@ -199,6 +200,10 @@ input[type=text], select, textarea {
 }
 
 /* PORTFOLIO PAGE*/
+
+.card-title {
+    font-weight: bold;
+}
 
 .thumbnail {
     border-radius: 50%;
