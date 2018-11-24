@@ -38,16 +38,16 @@
         </nav>
         <br>
         <div class="text-center">
-            <button><a href="https://github.com/kat3ng" target="_blank">
+            <button class="noborder"><a href="https://github.com/kat3ng" target="_blank">
                     <img style="width:40px;height:40px" class="thumbnail" src="assets/images/gh_icon.png" alt="github">
                 </a></button>
-            <button><a href="https://linkedin.com/in/kat-eng/" target="_blank">
+            <button class="noborder"><a href="https://linkedin.com/in/kat-eng/" target="_blank">
                     <img style="width:40px;height:40px" class="thumbnail" src="assets/images/li_icon.png" alt="linkedin">
                 </a></button>
-            <button><a href="https://www.meetup.com/members/257579730/" target="_blank">
+            <button class="noborder"><a href="https://www.meetup.com/members/257579730/" target="_blank">
                     <img style="width:40px;height:40px" class="thumbnail" src="assets/images/mu_icon.png" alt="meetup">
                 </a></button>
-            <button><a href="https://www.instagram.com/kat3ng/" target="_blank">
+            <button class="noborder"><a href="https://www.instagram.com/kat3ng/" target="_blank">
                     <img style="width:40px;height:40px" class="thumbnail" src="assets/images/ig_icon.png" alt="instagram">
                 </a></button>
         </div>
@@ -66,7 +66,7 @@
                 experience, skills and more. To learn more or connect on an opportunity, don’t hesitate to reach out.
 
             </p>
-            <a href="#contact" class="button margin poppins">Contact Me
+            <a href="#connect" class="button margin poppins">Contact Me
             </a>
             <br>
             <br>
@@ -143,39 +143,35 @@
     <!-- CALL ME BEEP ME IF YOU WANT TO REACH ME -->
     <div class="row-md-12 image_bar">
 
-        <a name="contact"></a>
-
-        <div class="margin poppins">
-            <div class="card-body contact-form ">
-                <h1 class="wht-fnt poppins-w">LET'S CONNECT</h1>
-                <form>
-                    <div class="row justify-content-center">
-                        <div class="col">
-                            <div class="row-md-12">
-                                <input type="text" class="form-control" placeholder="Name">
-                            </div>
-                            <div class="row-md-12 email-input">
-                                <input type="text" class="form-control" placeholder="Email">
-                            </div>
-                            <div class="row-md-12">
-                                <input type="text" class="form-control" placeholder="Subject">
-                            </div>
-                            <div class="row-md-12 input-lg">
-                                <textarea id="message" name="message" placeholder="Write something..." style="height:300px"></textarea>
-                            </div>
-                            <div class="row">
-                                <input type="submit" value="Submit">
-                            </div>
-
+        <div class="text-block poppins contact-form margin">
+            <h1 class="wht-fnt poppins-w" id="connect">LET'S CONNECT</h1>
+            <form>
+                <div class="row">
+                    <div class="col">
+                        <div class="row-md-12">
+                            <input type="text" class="form-control" placeholder="Name">
                         </div>
+                        <div class="row-md-12 email-input">
+                            <input type="text" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="row-md-12">
+                            <input type="text" class="form-control" placeholder="Subject">
+                        </div>
+                        <div class="row-md-12 input-lg">
+                            <textarea id="message" name="message" placeholder="Write something..." style="height:300px"></textarea>
+                        </div>
+                        <div class="row-md-8">
+                            <input id="submit" type="submit" value="Submit">
+                        </div>
+
                     </div>
-                </form>
-            </div>
+                </div>
+            </form>
         </div>
     </div>
-    <div class="container">
-        <footer class="text-center">Copywrite Kat Eng 2018</footer>
-    </div>
+
+    <footer class="text-center margin" id="footer">Copywrite Kat Eng 2018</footer>
+
 </body>
 
 </html>
