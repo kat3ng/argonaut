@@ -3,7 +3,7 @@ body {
 }
 
 div {
-    /* border: 1px black solid; */
+    border: 1px black solid;
 }
 
 /* * {
@@ -40,7 +40,7 @@ div {
 /* NAV STYLING */
 
 .nav-link {
-    font-size: 16px;
+    font-size: 18px;
     color: goldenrod;
     margin: 4%;
 }
@@ -50,12 +50,12 @@ div {
 }
 
 #tagline {
-    font-size: 20px;
+    font-size: 24px;
 }
 
 /* ABOUT PAGE */
 
-#about-me, h4, h1, h5 {
+#about-me, h3, h1, h5 {
     margin-top: 5%;
     margin-bottom: 5%;
 }
