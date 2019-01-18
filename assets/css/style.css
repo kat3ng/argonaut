@@ -3,7 +3,7 @@ body {
 }
 
 div {
-    border: 1px black solid;
+    /* border: 1px black solid; */
 }
 
 /* * {
@@ -55,7 +55,7 @@ div {
 
 /* ABOUT PAGE */
 
-#about-me, h3, h1, h5 {
+#about-me, h3, h4, h1, h5 {
     margin-top: 5%;
     margin-bottom: 5%;
 }
@@ -79,6 +79,7 @@ div {
 
 .card, .noborder {
     border: none;
+    /* max-width: 450px; */
 }
 
 .card-body {
@@ -153,6 +154,13 @@ footer {
 #connect {
     font-size: 65px;
     padding: 10px;
+    /* color: black; */
+}
+
+.contact-info-addresses {
+    /* color: black; */
+    /* width: 500px; */
+    align-content: center;
 }
 
 .contact-form {
